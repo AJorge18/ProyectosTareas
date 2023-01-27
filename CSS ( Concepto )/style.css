@@ -1,0 +1,34 @@
+﻿body {
+}
+
+h1{
+    color:darkred;
+}
+
+
+p{
+    color:darkblue;
+    font-size:30px;
+}
+
+#primera-noticia {
+    color:green;
+    font-size:12px;
+}
+
+#segunda-noticia {
+    color:aqua;
+}
+
+.encabezado {
+    font-size: 40px;
+    text-transform:uppercase;
+}
+
+* .warning{
+    color:red;
+}
+
+.autor, .fecha, .ubicacion {
+    text-decoration:underline;
+}
