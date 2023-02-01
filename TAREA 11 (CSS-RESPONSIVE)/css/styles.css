@@ -1,0 +1,30 @@
+﻿.contenedor {
+    display: flex;
+}
+
+.barra-lateral {
+    width: 200px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+    .barra-lateral div {
+        margin: 10px;
+    }
+
+.seccion-principal {
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .barra-lateral {
+        width: 100%;
+        flex-direction: row;
+    }
+}

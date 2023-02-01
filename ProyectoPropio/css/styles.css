@@ -1,0 +1,193 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    position:sticky;
+    background-color: #DADCD8;
+    padding: 15px;
+    text-align: center;
+    z-index:2;
+    top:0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    color: #777875;
+    text-decoration: none;
+    font-style: italic;
+    margin: 0 40px;
+}
+li img {
+    width: 75px;
+    margin: 0 65px;
+    opacity: 0.7;
+}
+li img:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+li a:hover{
+    color:black;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+    background-color: white ;
+}
+
+/* 1ERA COLUMNA*/
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* texto de la izquierda */
+.text {
+    flex: 1;
+    padding:0 160px;
+}
+.text .descripcion{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+        line-height: 40px;
+        padding-top:15px;
+    }
+.text .titulo-descripcion {
+        font-family: 'Spectral', serif;
+        font-size: 15px;
+    }
+.text .titulo-producto {
+        font-family: 'Spectral', serif;
+        font-size: 13px;
+        margin-top:35px;
+    }
+
+/* 3 fotos de las hojas */
+.imagenes{
+        display:flex;
+        margin-top: 40px;
+        justify-content:space-around;
+    }
+.imagenes .img-text img{
+        width:40px;
+        height:40px;
+        opacity:0.6;
+        margin:auto;
+    }
+.imagenes img:hover{
+        opacity:1;
+    }
+.imagenes div p {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+.img-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+/* foto a la derecha del vino */
+.image {
+        width: 30%;
+        margin: 0 120px 0 0;
+ }
+.image img {
+            width: 100%;
+            height: auto;
+            opacity:0.8;
+    }
+.image img:hover{
+    opacity:1;
+}
+
+/* separador */
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    margin: 40px 0;
+}
+.separator hr {
+     flex-grow: 1;
+     border: none;
+     border-top: 1px solid #DADCD8;
+ }
+.separator span {
+    color: #8b8b8b;
+}
+
+/* 2DA COLUMNA */
+.container-2 {
+    display: flex;
+    align-items: center;
+}
+
+/* foto a la izquierda los vinos */
+.image-2{
+    width:30%;
+    margin: 0 0 0 160px;
+}
+.image-2 img{
+    width:100%;
+    opacity:0.8;
+}
+.image-2 img:hover{
+    opacity:1;
+}
+
+/* texto a la derecha*/
+.text-2 {
+    flex: 1;
+    padding: 0 160px;
+    margin:0;
+}
+.text-2 .descripcion-2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    line-height: 40px;
+    padding-top: 15px;
+}
+.text-2 .text-vino-2 {
+    font-family: 'Spectral', serif;
+    font-size:15px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1100px) {
+    .container,.container-2 {
+        flex-direction: column;
+    }
+    .text, .text-2 {
+        width: 50%;
+    }
+    .image, .image-2 {
+        width: 30%;
+        margin:60px 0;
+        justify-content:space-around;
+    }
+    .imagenes{
+        width:100%;
+    }
+}
+
+    /* FOOTER */
+footer {
+    background-color: #DADCD8;
+    padding: 10px;
+    text-align: center;
+}
